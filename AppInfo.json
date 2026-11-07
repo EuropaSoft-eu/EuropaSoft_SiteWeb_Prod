@@ -1,6 +1,6 @@
 {
   "name": "EuropaSoft — Site web",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "company": "EuropaSoft",
   "developer": "Yoann CRAMATTE",
   "website": "https://europasoft.eu",
@@ -8,6 +8,14 @@
   "copyright": "© 2026 EuropaSoft. Tous droits réservés.",
   "description": "Site vitrine de l'entreprise EuropaSoft : présentation, applications, à propos, contact et mentions légales. HTML/CSS/JS statique, sans build.",
   "changelog": [
+    {
+      "version": "0.1.5",
+      "date": "2026-11-07",
+      "changes": [
+        "Deux dépôts : dépôt de travail privé (EuropaSoft_SiteWeb) et dépôt de production public (EuropaSoft_SiteWeb_Prod) qui ne contient que le site",
+        "scripts/publier-ovh.sh publie public/ dans le dépôt de production, suivi par le déploiement Git d'OVH"
+      ]
+    },
     {
       "version": "0.1.4",
       "date": "2026-11-07",
