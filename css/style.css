@@ -581,7 +581,6 @@ a:hover { color: var(--color-primary-hover); text-decoration-thickness: 2px; }
   .js .site-nav a:not(.btn) { display: flex; min-height: 3rem; font-size: var(--step-1); font-family: var(--font-display); }
   .js .site-nav a:not(.btn)::after { display: none; }
   .js .site-nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--color-accent); text-underline-offset: 0.3em; }
-  .js .site-nav .btn { margin-top: var(--space-3); }
 }
 @media (max-width: 59.99rem) and (prefers-reduced-motion: no-preference) {
   .js .site-nav[data-open] { animation: menu-in var(--duration-base) var(--ease-out); }
