@@ -1,6 +1,6 @@
 {
   "name": "EuropaSoft — Site web",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "company": "EuropaSoft",
   "developer": "Yoann CRAMATTE",
   "website": "https://europasoft.eu",
@@ -8,6 +8,13 @@
   "copyright": "© 2026 EuropaSoft. Tous droits réservés.",
   "description": "Site vitrine de l'entreprise EuropaSoft : présentation, applications, à propos, contact et mentions légales. HTML/CSS/JS statique, sans build.",
   "changelog": [
+    {
+      "version": "0.1.7",
+      "date": "2026-11-08",
+      "changes": [
+        "Correctif : un visiteur déjà venu gardait l'ancienne feuille de style en cache et voyait les deux logos en grand ; CSS et JS sont maintenant versionnés (?v=) et revalidés à chaque visite"
+      ]
+    },
     {
       "version": "0.1.6",
       "date": "2026-11-07",
