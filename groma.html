@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Groma, le relevé GPS de terrain vers QGIS | EuropaSoft</title>
+<meta name="description" content="Groma relève la position GPS des équipements de terrain (eau, assainissement, SPANC, voirie) et produit un GeoJSON prêt pour QGIS. Sur tablette, hors réseau, sans compte, libre (AGPL v3).">
+<link rel="canonical" href="https://europasoft.eu/groma.html">
+<meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11141A" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EuropaSoft">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Groma, le relevé GPS de terrain vers QGIS | EuropaSoft">
+<meta property="og:description" content="Groma relève la position GPS des équipements de terrain (eau, assainissement, SPANC, voirie) et produit un GeoJSON prêt pour QGIS. Sur tablette, hors réseau, sans compte, libre (AGPL v3).">
+<meta property="og:url" content="https://europasoft.eu/groma.html">
+<meta property="og:image" content="https://europasoft.eu/assets/logo/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo EuropaSoft">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/newsreader-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=0.1.9">
+<script>document.documentElement.classList.add("js")</script>
+<script src="js/appinfo.js?v=0.1.9" defer></script>
+<script src="js/main.js?v=0.1.9" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Groma",
+  "description": "Groma relève la position GPS des équipements de terrain (eau, assainissement, SPANC, voirie) et produit un GeoJSON prêt pour QGIS. Sur tablette, hors réseau, sans compte, libre (AGPL v3).",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "url": "https://europasoft.eu/groma.html",
+  "inLanguage": "fr",
+  "softwareVersion": "1.3",
+  "screenshot": [
+    "https://europasoft.eu/assets/captures/groma-mesure.webp",
+    "https://europasoft.eu/assets/captures/groma-liste.webp"
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "EuropaSoft",
+    "url": "https://europasoft.eu/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Yoann CRAMATTE"
+  },
+  "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+  "installUrl": "https://europasoft-eu.github.io/Groma/"
+}
+</script>
+</head><body>
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="EuropaSoft, retour à l’accueil"><img class="brand__logo brand__logo--clair" src="assets/logo/europasoft-logo.webp" width="640" height="192" alt=""><img class="brand__logo brand__logo--sombre" src="assets/logo/europasoft-logo-sombre.webp" width="640" height="192" alt=""></a>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg><span aria-hidden="true">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html" aria-current="page">Produits</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+
+<section class="page-hero fiche-hero" aria-labelledby="page-titre">
+  <div class="container">
+    <p class="eyebrow"><a href="produits.html">Logiciels</a></p>
+    <div class="fiche-hero__titre">
+      <span class="app-icon app-icon--lg"><img src="assets/apps/groma.svg" width="192" height="192" alt=""></span>
+      <h1 id="page-titre">Groma</h1>
+    </div>
+    <p class="product__subtitle">Le relevé GPS de terrain, prêt pour QGIS</p>
+    <p class="lead">Groma relève la position GPS d’un équipement sur le terrain, l’identifie dans votre catalogue et l’enregistre dans un fichier GeoJSON qui s’ouvre directement dans QGIS. Pensée pour la tablette utilisée dehors, parfois avec des gants.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="https://europasoft-eu.github.io/Groma/">Ouvrir Groma <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      <a class="btn btn--secondary" href="produits.html">Tous nos logiciels</a>
+    </div>
+    <ul class="fiche-faits" aria-label="En bref"><li>Hors réseau</li><li>Sans compte</li><li>Tablette et smartphone</li><li>Libre (AGPL v3)</li><li>Version 1.3</li></ul>
+  </div>
+</section>
+<section class="section" aria-labelledby="comment-titre">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="comment-titre">Un relevé, de bout en bout</h2>
+    </div>
+    <div class="fiche-split">
+    <ol class="etapes" data-reveal>
+      <li><strong>Créez une mesure.</strong> Dans l’onglet de la filière, par exemple <em>Eau</em>. La carte s’affiche et le GPS démarre tout seul ; un viseur reste fixe au centre.</li>
+      <li><strong>Laissez la mesure s’affiner.</strong> Le viseur se pose dès le premier point, puis se resserre ; précision et dispersion s’affichent en direct.</li>
+      <li><strong>Recalez si besoin.</strong> Le GPS est tombé à trois mètres du tampon ? Faites glisser la carte sous le viseur. L’écart est mesuré et enregistré à part : la précision du récepteur n’est jamais maquillée.</li>
+      <li><strong>Identifiez l’ouvrage.</strong> Trois listes liées : type, puis modèle, puis détail. Choisir un type restreint les modèles, choisir un modèle restreint les détails.</li>
+      <li><strong>Ajoutez une phrase.</strong> « Accès par la cour du 12, tampon scellé » : ce qu’aucun catalogue ne peut prévoir.</li>
+      <li><strong>Enregistrez.</strong> Le relevé rejoint le fichier de la filière, avec sa référence, sa date, sa précision et ses coordonnées en Lambert 93.</li>
+    </ol>
+<figure class="capture capture--tablette">
+  <img src="assets/captures/groma-mesure.webp" width="900" height="1200" alt="L’écran de mesure de Groma sur tablette : carte IGN avec le viseur, coordonnées, listes Type de matériel, Modèle et Détail, champ Observations." loading="lazy" decoding="async">
+  <figcaption>Une mesure en cours : le viseur, la position, puis les trois listes du catalogue et l’observation.</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section section--alt" aria-labelledby="fichier-titre">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="fichier-titre">Ce que vous rapportez du terrain</h2>
+    </div>
+    <div class="fiche-split">
+      <div class="prose" data-reveal>
+        <p>Chaque relevé devient une entité d’un fichier <strong>GeoJSON</strong> conforme à la norme (RFC 7946), une filière par fichier. Vingt et un champs, dont quatre seulement sont saisis : les trois niveaux du catalogue et l’observation. Groma produit tout le reste — position, qualité de la mesure, conversion en Lambert 93, date, référence.</p>
+        <p>Le fichier se glisse dans QGIS et s’ouvre tel quel : la géométrie est dans le document, les nombres sont des nombres, aucun dialogue d’import ne demande quelle colonne porte le X.</p>
+        <p><strong>Le tour suivant est plus rapide</strong> : une étoile sur un relevé met sa combinaison en favori, et un appui la repose. C’est ce qui rend tenable une tournée de vingt vannes identiques.</p>
+        <pre class="code-extrait"><code>"type_materiel": "Compteur",
+"modele": "DN 20",
+"detail": "Volumétrique",
+"observations": "accès par la cour du 12, tampon scellé",
+"precision_m": 4,
+"x_l93": 1006940.64,
+"y_l93": 6720946.95</code></pre>
+      </div>
+<figure class="capture capture--tablette">
+  <img src="assets/captures/groma-liste.webp" width="900" height="1200" alt="La liste des relevés de Groma : trois relevés avec leur référence, leur matériel, leurs coordonnées et leur précision, et un bandeau qui invite à les exporter." loading="lazy" decoding="async">
+  <figcaption>La liste des relevés, avec le rappel d’exporter ceux qui ne sont encore que dans le navigateur.</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section" aria-labelledby="filieres-titre">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="filieres-titre">Quatre filières, un catalogue modifiable</h2>
+    </div>
+    <div class="tableau-defile" data-reveal>
+      <table class="tableau">
+        <caption>Chaque filière a son catalogue, sa couleur et son fichier.</caption>
+        <thead><tr><th scope="col">Filière</th><th scope="col">Fichier</th><th scope="col">Références</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Eau</th><td><code>eau.geojson</code></td><td>AEP-0001…</td></tr>
+          <tr><th scope="row">Assainissement</th><td><code>assainissement.geojson</code></td><td>AC-0001…</td></tr>
+          <tr><th scope="row">SPANC</th><td><code>spanc.geojson</code></td><td>ANC-0001…</td></tr>
+          <tr><th scope="row">Voirie</th><td><code>voirie.geojson</code></td><td>VOI-0001…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="encart" data-reveal>Ces filières sont la configuration livrée, pas une limite : <strong>le catalogue de matériel s’édite depuis l’application</strong>, sans toucher au code. Si vous relevez des bornes incendie ou des stations de mesure, vous remplacez le catalogue et les listes suivent.</p>
+  </div>
+</section>
+<section class="section section--alt" aria-labelledby="installer-titre">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="installer-titre">L’installer sur la tablette</h2>
+    </div>
+    <div class="tableau-defile" data-reveal>
+      <table class="tableau">
+        <caption>Groma est une application web installable (PWA).</caption>
+        <thead><tr><th scope="col">Appareil</th><th scope="col">Comment faire</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Android, Chrome</th><td>Bandeau <em>Installer</em>, ou menu ⋮, puis <em>Installer l’application</em>.</td></tr>
+          <tr><th scope="row">iPhone, iPad, Safari</th><td>Bouton <em>Partager</em>, puis <em>Sur l’écran d’accueil</em>.</td></tr>
+          <tr><th scope="row">Ordinateur</th><td>Icône d’installation dans la barre d’adresse.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="encart" data-reveal>Une fois installée, Groma s’ouvre en plein écran et <strong>fonctionne sans réseau</strong> : GPS, saisie, catalogue et export restent entiers. Seul le fond de carte manque hors couverture ; le viseur, les coordonnées et l’enregistrement continuent de fonctionner.</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="donnees-titre">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="donnees-titre">Vos relevés restent chez vous</h2>
+    </div>
+    <div class="prose" data-reveal>
+      <p>Aucun compte, aucun serveur : vos relevés vivent dans le navigateur de l’appareil et en sortent par un fichier que vous contrôlez. La seule requête vers l’extérieur est le chargement du fond de carte, fourni par la Géoplateforme de l’IGN.</p>
+    </div>
+    <div class="encart" data-reveal>
+      <p><strong>Exportez vos relevés.</strong> Tant qu’ils ne sont que dans le navigateur, désinstaller l’application ou effacer les données du site les supprime. Groma vous prévient par un bandeau tant qu’un relevé n’est sorti nulle part. Sur Chrome et Edge, un <em>fichier lié</em> est réécrit à chaque enregistrement : c’est la façon la plus sûre de ne rien perdre.</p>
+    </div>
+  </div>
+</section>
+<section class="section section--alt" aria-labelledby="tech-titre">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="tech-titre">En bref</h2>
+    </div>
+    <dl class="fiche-tech" data-reveal>
+      <div><dt>Version</dt><dd>1.3</dd></div>
+      <div><dt>Plateformes</dt><dd>Navigateur web sur tablette, smartphone et ordinateur ; installable comme application. Utilisable dès 280 px de large</dd></div>
+      <div><dt>Fonctionnement</dt><dd>Hors réseau, sans compte, sans serveur</dd></div>
+      <div><dt>Fichiers</dt><dd>GeoJSON (RFC 7946), coordonnées WGS84 et Lambert 93</dd></div>
+      <div><dt>Fond de carte</dt><dd>Photo aérienne et plan de l’IGN (Géoplateforme)</dd></div>
+      <div><dt>Licence</dt><dd>Libre (AGPL v3) — <a href="https://github.com/EuropaSoft-eu/Groma">code source sur GitHub</a></dd></div>
+    </dl>
+  </div>
+</section>
+<section class="cta-band" aria-labelledby="cta-titre">
+  <div class="container">
+    <div class="cta-panel" data-reveal>
+      <img class="monogram" src="assets/logo/europasoft-symbole.webp" width="192" height="192" alt="" loading="lazy">
+      <h2 id="cta-titre">Vous relevez autre chose ?</h2>
+      <p>Bornes, capteurs, arbres remarquables : décrivez-nous votre tournée, nous vous dirons comment adapter le catalogue.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="contact.html">Nous écrire <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="monogram" src="assets/logo/europasoft-symbole.webp" width="192" height="192" alt="" loading="lazy">
+        <p class="footer-brand__name">Europa<em>Soft</em></p>
+        <p>Des logiciels européens, légers et sobres, qui travaillent pour vous et gardent vos données chez vous.</p>
+      </div>
+      <nav aria-labelledby="f-logiciels">
+        <h2 class="footer-title" id="f-logiciels">Logiciels</h2>
+        <ul class="footer-list">
+            <li><a href="clio.html">Clio</a></li>
+            <li><a href="calliope.html">Calliope</a></li>
+            <li><a href="groma.html">Groma</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-societe">
+        <h2 class="footer-title" id="f-societe">EuropaSoft</h2>
+        <ul class="footer-list">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-title">Nous écrire</h2>
+        <p><a href="mailto:contact@europasoft.eu" data-appinfo="contact">contact@europasoft.eu</a></p>
+        <p>Réponse sous 2 semaines en moyenne.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span data-appinfo="copyright">© 2026 EuropaSoft. Tous droits réservés.</span> Conçu en France par <span data-appinfo="developer">Yoann CRAMATTE</span>.</p>
+      <p>Ce site n’utilise ni cookie de suivi ni outil d’analyse d’audience.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

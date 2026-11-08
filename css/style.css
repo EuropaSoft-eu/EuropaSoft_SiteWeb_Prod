@@ -1173,6 +1173,97 @@ a:hover { color: var(--color-primary-hover); text-decoration-thickness: 2px; }
 .commons strong { display: block; margin-bottom: var(--space-2); font: 560 var(--step-1)/1.25 var(--font-display); color: var(--color-text); }
 
 
+/* 10 bis. Fiches application (clio.html, calliope.html, groma.html) ------- */
+
+.fiche-hero__titre { display: flex; align-items: center; gap: var(--space-5); }
+.fiche-hero__titre h1 { min-width: 0; }
+.fiche-hero .app-icon { flex: none; }
+.fiche-hero .btn-row { margin-top: var(--space-6); }
+.fiche-faits {
+  display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5);
+  margin: var(--space-5) 0 0; padding: 0; list-style: none;
+  font-size: var(--step--1); color: var(--color-text-muted);
+}
+
+.capture { margin: 0; }
+.capture img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  background: var(--color-surface);
+}
+.capture figcaption {
+  margin-top: var(--space-3);
+  font: italic 400 var(--step--1)/1.45 var(--font-display);
+  color: var(--color-text-muted);
+}
+.capture--etroite { max-width: 20rem; margin-inline: auto; }
+.capture--tablette { max-width: 28rem; margin-inline: auto; }
+
+.captures { display: grid; gap: var(--space-7); margin-top: var(--space-7); }
+@media (min-width: 48rem) {
+  .captures--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .captures--large-etroite { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); align-items: end; }
+}
+
+.etapes { display: grid; gap: var(--space-5); margin: 0; padding: 0; list-style: none; counter-reset: etape; max-width: var(--measure); }
+.etapes li {
+  counter-increment: etape;
+  position: relative;
+  padding-left: 3.25rem;
+  color: var(--color-text-muted);
+}
+.etapes li::before {
+  content: counter(etape);
+  position: absolute; left: 0; top: -0.1em;
+  width: 2.25rem; height: 2.25rem;
+  display: grid; place-items: center;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  font: 500 var(--step-1)/1 var(--font-display);
+  color: var(--color-accent);
+}
+.etapes strong { display: block; margin-bottom: var(--space-1); color: var(--color-text); font-weight: 600; }
+
+.fiche-split { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-7); }
+@media (min-width: 60rem) { .fiche-split { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-8); align-items: start; } }
+
+.tableau-defile { overflow-x: auto; max-width: 100%; }
+.tableau { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
+.tableau caption { text-align: left; margin-bottom: var(--space-3); color: var(--color-text-muted); }
+.tableau th, .tableau td { padding: var(--space-3) var(--space-4) var(--space-3) 0; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.tableau thead th { font-weight: 600; color: var(--color-text); border-bottom-color: var(--color-border-strong); }
+.tableau td { color: var(--color-text-muted); }
+.tableau tbody th { font-weight: 600; color: var(--color-text); white-space: nowrap; }
+
+.encart {
+  max-width: var(--measure);
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  background: var(--color-surface);
+}
+.encart strong { color: var(--color-text); }
+.encart > * + * { margin-top: var(--space-3); }
+
+.fiche-tech { display: grid; gap: 0; margin: 0; max-width: 46rem; }
+.fiche-tech > div { display: grid; gap: var(--space-1) var(--space-6); padding: var(--space-4) 0; border-top: 1px solid var(--color-border); }
+@media (min-width: 40rem) { .fiche-tech > div { grid-template-columns: 12rem minmax(0, 1fr); } }
+.fiche-tech dt { font-weight: 600; color: var(--color-text); }
+.fiche-tech dd { margin: 0; color: var(--color-text-muted); }
+
+.code-extrait {
+  max-width: 100%; overflow-x: auto;
+  margin-top: var(--space-5); padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border); border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font: 400 var(--step--1)/1.6 var(--font-mono); color: var(--color-text);
+}
+
+.mini-card__fiche { position: relative; z-index: 2; font-weight: 600; }
+
 /* 11. À propos ------------------------------------------------------------- */
 
 .prose { max-width: var(--measure); }

@@ -1,6 +1,6 @@
 {
   "name": "EuropaSoft — Site web",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "company": "EuropaSoft",
   "developer": "Yoann CRAMATTE",
   "website": "https://europasoft.eu",
@@ -8,6 +8,15 @@
   "copyright": "© 2026 EuropaSoft. Tous droits réservés.",
   "description": "Site vitrine de l'entreprise EuropaSoft : présentation, applications, à propos, contact et mentions légales. HTML/CSS/JS statique, sans build.",
   "changelog": [
+    {
+      "version": "0.1.9",
+      "date": "2026-11-08",
+      "changes": [
+        "Une fiche par application (clio.html, calliope.html, groma.html) : fonctionnement pas à pas, fonctions, installation, données, fiche technique",
+        "Vraies captures d'écran des trois applications, prises sur leurs versions en ligne avec des données de démonstration",
+        "Liens vers les fiches depuis la page Produits, l'accueil et les pieds de page ; plan du site complété"
+      ]
+    },
     {
       "version": "0.1.8",
       "date": "2026-11-08",
