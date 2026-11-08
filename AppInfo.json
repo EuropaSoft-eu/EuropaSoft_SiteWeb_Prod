@@ -1,6 +1,6 @@
 {
   "name": "EuropaSoft — Site web",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "company": "EuropaSoft",
   "developer": "Yoann CRAMATTE",
   "website": "https://europasoft.eu",
@@ -8,6 +8,17 @@
   "copyright": "© 2026 EuropaSoft. Tous droits réservés.",
   "description": "Site vitrine de l'entreprise EuropaSoft : présentation, applications, à propos, contact et mentions légales. HTML/CSS/JS statique, sans build.",
   "changelog": [
+    {
+      "version": "0.1.8",
+      "date": "2026-11-08",
+      "changes": [
+        "Accueil : nouveau texte d'accroche (hors ligne, installable en PWA ou sur l'appareil, aucune donnée collectée, aucun cookie)",
+        "Illustration du manuscrit déplacée de l'accueil vers la fiche Clio de la page Produits",
+        "FAQ de l'accueil : marqueurs à compléter retirés (synchronisation, systèmes pris en charge, tarifs)",
+        "Délai de réponse renseigné : 2 semaines en moyenne (pieds de page et page Contact)",
+        "Valeurs numérotées en chiffres (1, 2, 3…) au lieu des chiffres romains"
+      ]
+    },
     {
       "version": "0.1.7",
       "date": "2026-11-08",
